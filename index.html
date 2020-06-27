@@ -3,21 +3,18 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Calculatrice 2.0</title>
+   <title>Calculatrice </title>
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <div class="no-displaying">
-      <h1>La taille de l'ecran est trop
-         grande
-      </h1>
-   </div>
+   
    <div class="container">
       <div class="afficheur">
          <span class="sign"></span><span class="value">
-         <p  class="resultat"></p>
+         <span class="resultat"></span>
          </span>
       </div>
+    
       <div class="buttons-side">
          <div class="left_side">
             <ul class="functions">
@@ -49,7 +46,20 @@
                <li onclick="calcul('=')">=</li>
             </ul>
          </div>
+         <div class="no-displaying">
+           <div class="right_side">
+            <ul class="operators options">
+               <li onclick="calcul('/')">÷</li>
+               <li onclick="calcul('*')">×</li>
+               <li onclick="calcul('-')">-</li>
+               <li onclick="calcul('+')">+</li>
+               <li onclick="calcul('=')">=</li>
+            </ul>
+         </div>
       </div>
+     
+      
+
    </div>
    <script src="./js/script.js"
    ></script>

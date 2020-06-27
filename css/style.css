@@ -29,6 +29,7 @@ body{
 
 .afficheur{
     /* border: 1px solid red; */
+    display: inline-block;
     text-align: right;
     height: max-content;
     width: 100%;
@@ -113,11 +114,105 @@ li:hover{
 /* Interface web */
 @media(min-width : 400px){
 .container{
-   display: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   height: 100vh;
 }
 .no-displaying{
    display: flex;
-   justify-content: center;
+   justify-content: flex-end;
    align-items: center;
 }
+
+.afficheur{
+    /* border: 1px solid red; */
+    display: inline-block;
+    text-align: right;
+    height: max-content;
+    width: 100%;
+    padding: 20px;
+    font-size: 48px;
+    font-weight: 500;
+    position: relative;
+    top: 0px;
+}
+.buttons-side{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+
+}
+ul{
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+.left_side{
+   height: 80vh;
+   width: 300px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+.left_side .functions{
+   width: 100%;
+   height: fit-content;
+   display: flex;
+}
+.left_side .number{
+   height: fit-content;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   /* grid-template-columns: repeat(3, 100px); */
+   grid-gap: 0px;
+  float: left;
+
+}
+
+.right_side{
+   height: 80vh;
+   width: 100px;
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: column;float: right;
+}
+
+li{
+   width: 100px;
+   /* height: auto; */
+   display: flex;
+   justify-content: CENTER;
+   /* align-items: center; */
+   font-size: 28px;
+}
+li:hover{
+   opacity: .8;
+   transition: ease-in-out all 100ms;
+}
+
+.left_side .number li{
+   background-color: rgb(22, 22, 22);
+} 
+
+.left_side .number li.zero{
+   width: 200px;
+   grid-column: span 2;
+
+}
+
+.left_side .functions li{
+   background-color: rgb(42, 42, 42);
+}
+
+.right_side .operators li{
+   background-color: rgb(255, 172, 29);
+}
+.option{
+   background-color: black;
+}
+
 }
