@@ -41,6 +41,7 @@ body{
 }
 .buttons-side{
    display: flex;
+   flex-wrap: nowrap;
 
 }
 ul{
@@ -68,6 +69,7 @@ ul{
    grid-template-rows: 1fr 1fr 1fr;
    /* grid-template-columns: repeat(3, 100px); */
    grid-gap: 0px;
+   
 }
 
 .right_side{
@@ -85,6 +87,7 @@ li{
    justify-content: center;
    align-items: center;
    font-size: 28px;
+   border-radius: 50px;
 }
 li:hover{
    opacity: .8;
@@ -107,6 +110,7 @@ li:hover{
 
 .right_side .operators li{
    background-color: rgb(255, 172, 29);
+   
 }
 
 }
@@ -119,11 +123,14 @@ li:hover{
    justify-content: flex-start;
    align-items: flex-start;
    height: 100vh;
+   
 }
 .no-displaying{
    display: flex;
    justify-content: flex-end;
    align-items: center;
+   
+
 }
 
 .afficheur{
@@ -157,7 +164,6 @@ ul{
    justify-content: flex-end;
 }
 .left_side .functions{
-   width: 100%;
    height: fit-content;
    display: flex;
 }
@@ -171,6 +177,17 @@ ul{
    grid-gap: 0px;
   float: left;
 
+
+}
+.functions{
+   width: 400px;
+   height: 55px;
+   font-size: 28px;
+   display: flex;
+
+}
+.zero{
+   text-align: left;
 }
 
 .right_side{
@@ -182,12 +199,14 @@ ul{
 }
 
 li{
-   width: 100px;
+   width: 60px;
+   height: 55px;
    /* height: auto; */
    display: flex;
    justify-content: CENTER;
    /* align-items: center; */
    font-size: 28px;
+   border-radius: 60px;
 }
 li:hover{
    opacity: .8;
@@ -216,3 +235,5 @@ li:hover{
 }
 
 }
+
+
