@@ -21,7 +21,7 @@ function number(value){
          case "-":
                var resultat=nombre1-nombre2;
                printe.textContent=resultat;
-               
+               signes = "10^"
                break;
          
          case "*":
@@ -32,6 +32,9 @@ function number(value){
             var resultat=nombre1/nombre2;
             printe.textContent=resultat;
             break;
+            case "^":
+               var resultat=nombre1*Math.pow(10,nombre2);
+               printe.textContent=resultat;
          default:
             break;
             }
@@ -157,6 +160,28 @@ function tangentehyp(){
   printe.textContent=angles;
 
 }
+function exposant(){
+   var add=printe.textContent;
+   signe="^";
+   sign.textContent=signe;
+   signee.textContent=add;
+   printe.textContent=""
+}
+function factoriel(){
+   var x=printe.textContent;
+   x=parseInt(x);
+  
+  
+   var f=1;
+   
+
+  for(var i=1;i<=x;i++){
+      f=f*i;
+    
+   }
+   printe.textContent=f;
+}
+
 function addition(){
    var add=printe.textContent;
    signe="+";
@@ -184,4 +209,8 @@ function division(){
    sign.textContent=signe;
    signee.textContent=add;
    printe.textContent="";
+}
+function display(){
+   sign.textContent="";
+   signee.textContent="";
 }
