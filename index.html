@@ -9,29 +9,30 @@
 <body>
    <div class="no-displaying">
    </div>
+   <div class="afficheur">
+      <span class="sign"></span><span class="value"><P class="temp"0></P>
+      <P class="signe">,</P></span>
+   </div>
    <div class="container">
-      <div class="afficheur">
-         <span class="sign"></span><span class="value"><P class="temp"0></P>
-         <P class="signe">,</P></span>
-      </div>
+     
       <div class="buttons-side">
          <div class="left_side">
             <ul class="functions">
                <li onclick="reset();">AC</li>
                <li onclick="signing();">±</li>
-               <li onclick="percent();">%</li>
+               <li onclick="percent(); " class="plsoumoins">%</li>
             </ul>
             <ul class="number">
-               <li onclick="number(9)">9</li>
-               <li onclick="number(8)">8</li>
-               <li onclick="number(7)">7</li>
-               <li onclick="number(4)">4</li>
-               <li onclick="number(5)">5</li>
-               <li onclick="number(6)">6</li>
-               <li onclick="number(1)">1</li>
-               <li onclick="number(2)">2</li>
-               <li onclick="number(3)">3</li>
-               <li class="zero" onclick="number(0)">0</li>
+               <li onclick="number(9);">9</li>
+               <li onclick="number(8);">8</li>
+               <li onclick="number(7);">7</li>
+               <li onclick="number(4);">4</li>
+               <li onclick="number(5);">5</li>
+               <li onclick="number(6);">6</li>
+               <li onclick="number(1);">1</li>
+               <li onclick="number(2);">2</li>
+               <li onclick="number(3);">3</li>
+               <li class="zero" onclick="number(0);">0</li>
                <li onclick="">,</li>
 
             </ul>
@@ -42,15 +43,15 @@
                <li onclick="multiplication();">×</li>
                <li onclick="soustraction();">-</li>
                <li onclick="addition();">+</li>
-               <li onclick="calcul('=')">=</li>
+               <li onclick="calcul()">=</li>
             </ul>
          </div>
       </div>
       <div class="autre">
          <ul class="sup_button">
             <li onclick="cosinus();">cos</li>
-            <li onclick=>sin</li>
-            <li onclick="sinus();">tan</li>
+            <li onclick="sinus();">sin</li>
+            <li onclick="tangente();">tan</li>
             <li onclick="exponentielle();">e</li>
             <li onclick="cos">mr</li>
             <li onclick="cos">x!</li>
@@ -58,7 +59,7 @@
             <li onclick="sinushyp();">sinh</li>
             <li onclick="cosinushyp();">cosh</li>
             <li onclick="tangentehyp();">tanh</li>
-            <li onclick="cos">ln</li>
+            <li onclick="logarithme();">log</li>
             <li onclick="cos">EE</li>
             <li onclick="cos">(</li>
             <li onclick="cos">)</li>
