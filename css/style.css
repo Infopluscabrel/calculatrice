@@ -14,7 +14,7 @@ body{
    color: rgb(255, 255, 255);
 }
 /* Interface Mobile */
-@media(max-width : 419px){
+@media(max-width : 375px){
 .no-displaying{
    display: none;
 }
@@ -131,7 +131,7 @@ margin: 9px;
 }
 
 /* Interface web */
-@media(min-width : 420px){
+@media(min-width : 380px){
 body{
    width: 100%;
    height: 100%;
@@ -192,7 +192,7 @@ ul{
 }
 
 li{
-   width: 30px;
+   width: 35px;
    height: 30px;
    font-size: 16px;
    border-radius: 15px;
